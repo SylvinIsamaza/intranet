@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c9e7f863;
 }
 
 code {
@@ -17,6 +18,9 @@ code {
   height:40px;
   font-family: monospace;
   border-bottom: 6px solid #2D767F;
+  top:0;
+  position: fixed;
+ 
 }
 .profile{
   background-color: black;
@@ -30,6 +34,7 @@ code {
   margin-top: 10px;
   float: left;
   margin-left: 10%;
+  border-radius: 5px;
   
 }
 .searchicon{
@@ -47,18 +52,184 @@ margin: 13px 0 0 -20px;
  
   }
   .sidebar{
-    display: block;
+    
     float: left;
+    width:50px;
+    position:fixed;
+    height: 100vh;
+    top:100px;
 
   }
   .icon{
     border-radius: 50%;
     width:40px;
     height: 40px;
+    margin-left: -4.6px;
+    
+    
   }
   .sidebaricon{
 border-radius: 50%;
+border: 0px;
+margin-top:3px;
 width:43px;
 height: 43px;
 justify-items: center;
   }
+  .member{
+    
+    display: flex;
+   margin-top: 1%;
+     width:100%-100px;
+     background-color: black;
+     border-radius: 0.2em;
+     margin-left: 100px;
+     margin-right: 100px;
+    
+  }
+  .member h3{
+font-weight: 500;
+font-family: monospace;
+color: white;
+  }
+ .edit{
+  border:0px;
+  background-color: rgb(11, 10, 10);
+  margin-left: 83%;
+
+ }
+ .remove{
+  border:0px;
+  background-color: rgb(11, 11, 11);
+height: 10px;
+
+
+ }
+ .remove img{
+  height: 35px;
+ }
+ .App .member{
+  flex-grow:1;
+ }
+.App .collectionofmember{
+  margin-top:5%
+}
+.App{
+  text-align: center;}
+  .App h1{
+margin-top:3%
+  }
+  .eventcollection{
+    margin-top:40px;
+text-align: center;
+  }
+  .eventcollection input{
+    height:25px;
+    margin-left: 4%;
+  }
+  .eventcollection select:first-child{
+    margin-left: 10%;
+  }
+  .eventcollection :nth-child(3){
+    margin-left: 5%;
+  }
+  .eventcollection input:nth-child(3){
+    margin-right: 4%;
+  }
+  .eventcollection select{
+    height: 24px;
+    border-radius: 6px;
+  }
+  .eventcollection input{
+    height: 24px;
+    border-radius: 6px;
+    margin-bottom: 2%;
+  }
+  #set{
+    background-color: #2D767F;
+    color: aliceblue;
+
+  }
+  input[type='text']{
+    width:80px
+  }
+  .eventContainer{
+    width: 190px;;
+    height:190px;
+  background-color: rgb(184, 194, 184); 
+border-radius: 4px;
+}
+.eventContainer button{
+  margin-left: 45px;
+}
+.title{
+  display: flex;
+}
+.title h4:last-child{
+  margin-left: 60px;
+}
+.flexbox{
+  display: flex;
+}
+.eventContainer:first-of-type{
+  margin-left: 20%;
+  margin-right: 6%;
+}
+.eventContainer:nth-of-type(3){
+  margin-left:6%;
+  margin-right: 6%;
+}
+.flexbox2{
+  margin-top: 40px;
+}
+.dashboard{
+ margin-left: 10%;
+ margin-top:40px
+  
+}
+.dashboard h1{
+  text-align: center;
+}
+.dashboard .availability{
+  display: flex;
+}
+.dashboard .firstcontent{
+  border: 1px black ;
+  
+  border-radius: 5px;
+  padding: 1px 1px 1px 1px;
+  margin: 50px 0 0;
+  width: 90%;
+  text-align: center;
+  
+}
+.dashboard .firstcontent p{
+  border: 1px black ;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height:200px;
+ 
+
+ 
+}
+.dashboard .graph{
+  border: 1px black ;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height:200px;
+  width: 70%;
+ 
+
+ 
+}
+.dashboard .details{
+  border: 1px black ;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height:200px;
+  width: 28%;
+  margin-left: 20px;
+ 
+
+ 
+}

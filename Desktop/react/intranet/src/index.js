@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Events from './events';
+import NavigationBar from './navigationbar'
+import SidebarIcon from './sidebar';
+import EventContainer from './eventcontainer';
+import Dashboard from './dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+<NavigationBar/>
+<SidebarIcon/>
+{/* <EventContainer type="heloo" date="dfh"/> */}
+<Dashboard/>
+{/* <Events/> */}
   </React.StrictMode>
 );
 
